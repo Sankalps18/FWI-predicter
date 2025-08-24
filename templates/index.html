@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FWI Prediction - Home</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom gradient for the hero section */
+        .hero-gradient {
+            background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">FWI Predictor</a>
+            <div>
+                <a href="#" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <!-- This link should point to your prediction page -->
+                <a href="/predict" class="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium transition duration-300">Get Prediction</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white">
+        <div class="container mx-auto px-6 py-20 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Predict Forest Fire Danger with Confidence</h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                Utilizing advanced machine learning to provide accurate Fire Weather Index (FWI) predictions. Understand the risk, protect communities, and manage resources effectively.
+            </p>
+            <!-- This link should also point to your prediction page -->
+            <a href="/predictdata" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 transform hover:scale-105">
+                Start Predicting Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-6 py-16">
+
+        <!-- "What is FWI?" Section -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">What is the Fire Weather Index?</h2>
+                <p class="text-gray-600 mt-2 max-w-2xl mx-auto">The FWI System is a comprehensive model that assesses fire danger based on meteorological data. It's a critical tool for fire managers worldwide.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="bg-blue-100 text-blue-600 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fuel Moisture Codes</h3>
+                    <p class="text-gray-600">Represents the moisture content of forest floor fuels of different sizes, crucial for ignition potential.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="bg-blue-100 text-blue-600 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fire Behavior Indexes</h3>
+                    <p class="text-gray-600">Indicates the potential rate of fire spread and the amount of fuel available for combustion.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="bg-blue-100 text-blue-600 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">The Final FWI Value</h3>
+                    <p class="text-gray-600">A single numerical rating of fire intensity, combining all components to provide a clear danger assessment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- "How It Works" Section -->
+        <section>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Simple Steps to a Prediction</h2>
+                <p class="text-gray-600 mt-2">Get your FWI prediction in just a few clicks.</p>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-16">
+                <!-- Step 1 -->
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="flex-shrink-0 bg-gray-200 text-gray-800 rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">1</div>
+                    <div class="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
+                        <h3 class="text-lg font-semibold">Input Weather Data</h3>
+                        <p class="text-gray-600">Enter the required parameters like temperature, humidity, and wind speed.</p>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="flex-shrink-0 bg-gray-200 text-gray-800 rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">2</div>
+                    <div class="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
+                        <h3 class="text-lg font-semibold">Submit for Analysis</h3>
+                        <p class="text-gray-600">Our model processes the data instantly using a trained algorithm.</p>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="flex-shrink-0 bg-gray-200 text-gray-800 rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">3</div>
+                    <div class="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
+                        <h3 class="text-lg font-semibold">Receive FWI Result</h3>
+                        <p class="text-gray-600">Get an accurate FWI value to assess the potential fire danger.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p>&copy; 2024 FWI Predictor. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
